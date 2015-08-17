@@ -136,6 +136,7 @@ def get_images(html_tree):
 def get_logo(html_tree):
     images = get_images(html_tree)
     logos = dict()
+    sorted_logos = None
     if images:
         for image in images:
             file = urllib2.urlopen(image)
