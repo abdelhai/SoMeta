@@ -1,0 +1,493 @@
+
+
+.body {
+
+
+  font-family: Lato, sans-serif;
+
+
+}
+
+
+.main-container {
+
+
+  margin-bottom: 15px;
+
+
+  padding-top: 44px;
+
+
+}
+
+
+.heading1 {
+
+
+  font-family: Exo, sans-serif;
+
+
+  text-align: center;
+
+
+}
+
+
+.desc {
+
+
+  margin-bottom: 15px;
+
+
+  text-align: center;
+
+
+}
+
+
+.form-wrapper {
+
+
+  margin-top: 50px;
+
+
+}
+
+
+.try-field {
+
+
+  display: block;
+
+
+  height: 55px;
+
+
+  margin-right: auto;
+
+
+  margin-bottom: 15px;
+
+
+  margin-left: auto;
+
+
+  border-style: none;
+
+
+  border-radius: 9px;
+
+
+  background-color: #f1f1ff;
+
+
+  font-family:'Roboto Mono', sans-serif;
+
+
+  color: #adadad;
+
+
+  font-size: 13px;
+
+
+  line-height: 55px;
+
+
+  font-weight: 400;
+
+
+  text-align: center;
+
+
+}
+
+
+.try-button {
+
+
+  display: block;
+
+
+  width: 20%;
+
+
+  height: 40px;
+
+
+  margin-right: auto;
+
+
+  margin-left: auto;
+
+
+  border-radius: 9px;
+
+
+  background-color: #21427a;
+
+
+  text-transform: uppercase;
+
+
+}
+
+
+.form {
+
+
+  display: block;
+
+
+  width: 70%;
+
+
+  margin-right: auto;
+
+
+  margin-left: auto;
+
+
+}
+
+
+.try-option {
+
+
+  display: inline-block;
+
+
+  margin-left: 43px;
+
+
+}
+
+
+.try-options-wrapper {
+
+
+  display: block;
+
+
+  margin-right: auto;
+
+
+  margin-bottom: 15px;
+
+
+  margin-left: auto;
+
+
+  color: #adadad;
+
+
+  font-size: 12px;
+
+
+}
+
+
+.try-field-label {
+
+
+  margin-bottom: 15px;
+
+
+  font-size: 19px;
+
+
+  text-align: center;
+
+
+}
+
+
+.api-scheme {
+
+
+  margin-top: 50px;
+
+
+}
+
+
+.api-cell {
+
+
+  display: block;
+
+
+  width: 40%;
+
+
+  height: 92px;
+
+
+  margin-right: auto;
+
+
+  margin-bottom: 10px;
+
+
+  margin-left: auto;
+
+
+  background-color: #2c5499;
+
+
+}
+
+
+.api-cell-header {
+
+
+  width: 35%;
+
+
+  height: 20px;
+
+
+  background-color: #274985;
+
+
+  color: #f7f7f7;
+
+
+}
+
+
+.api-cell-heading {
+
+
+  font-family:'Roboto Mono', sans-serif;
+
+
+  color: #bdc3ce;
+
+
+  font-size: 11px;
+
+
+  text-align: center;
+
+
+}
+
+
+.api-cell-text {
+
+
+  width: 100%;
+
+
+  margin-top: 21px;
+
+
+  font-family:'Roboto Mono', sans-serif;
+
+
+  color: #a0b8e2;
+
+
+  text-align: center;
+
+
+}
+
+
+.status {
+
+
+  display: block;
+
+
+  width: 50px;
+
+
+  height: 20px;
+
+
+  margin-right: auto;
+
+
+  margin-bottom: 15px;
+
+
+  margin-left: auto;
+
+
+  border-radius: 14px;
+
+
+  background-color: #f2cf18;
+
+
+  color: white;
+
+
+  line-height: 20px;
+
+
+  text-align: center;
+
+
+}
+
+
+.h3 {
+
+
+  display: block;
+
+
+  margin-right: auto;
+
+
+  margin-left: auto;
+
+
+  font-weight: 300;
+
+
+  text-align: center;
+
+
+}
+
+
+.footer {
+
+
+  margin-top: 50px;
+
+
+  padding-left: 29px;
+
+
+  color: #adadad;
+
+
+  font-size: 10px;
+
+
+}
+
+
+.footer-link {
+
+
+  color: #2c5499;
+
+
+  text-decoration: none;
+
+
+}
+
+
+.footer-text {
+
+
+  float: left;
+
+
+}
+
+
+@media (max-width: 991px) {
+
+
+  .try-button {
+
+
+    width: 25%;
+
+
+  }
+
+
+  .try-option {
+
+
+    margin-left: 20px;
+
+
+  }
+
+
+  .api-cell {
+
+
+    width: 50%;
+
+
+  }
+
+
+}
+
+
+@media (max-width: 767px) {
+
+
+  .try-option {
+
+
+    display: inline-block;
+
+
+  }
+
+
+  .api-cell {
+
+
+    width: 70%;
+
+
+  }
+
+
+}
+
+
+@media (max-width: 479px) {
+
+
+  .heading1 {
+
+
+    font-size: 32px;
+
+
+  }
+
+
+  .form {
+
+
+    width: 80%;
+
+
+  }
+
+
+  .try-option {
+
+
+    display: block;
+
+
+  }
+
+
+  .api-cell {
+
+
+    width: 90%;
+
+
+  }
+
+
+}
+

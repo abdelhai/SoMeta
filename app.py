@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, send_file, Response
+from flask import Flask, request, jsonify, send_file, Response, render_template, redirect, url_for
 from lxml import etree
 import urllib2
 import helpers
@@ -10,21 +10,21 @@ import mimetypes
 app = Flask(__name__)
 XHTML_NAMESPACE = "http://www.w3.org/1999/xhtml"
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def index():
-    return """<h3>Enter a url after slash to get the metadata.</h3>
-    <b>Options:</b>
-    <ul>
-    <li>http://127.0.0.1:5000/github.com (all meta data)</li>
-    <li>http://127.0.0.1:5000/links/github.com (all link tags)</li>
-    <li>http://127.0.0.1:5000/logo/github.com (logo)</li>
-    <li>http://127.0.0.1:5000/images/github.com (images)</li>
-    <li>http://127.0.0.1:5000/og/github.com (open graph data)</li>
-    <li>http://127.0.0.1:5000/twitter/github.com (open graph data)</li>
-    </ul>
-
-    This is an experiment, bugs and errors are normal. Have fun ;)
-    """
+    if request.method == 'POST':
+        url = request.form['url']
+        if 'all' in request.form:
+            return redirect(url_for('meta', url=url))
+        elif 'og' in request.form:
+            return redirect(url_for('og', url=url))
+        elif 'twitter' in request.form:
+            return redirect(url_for('twitter', url=url))
+        elif 'images' in request.form:
+            return redirect(url_for('images', url=url))
+        elif 'logo' in request.form:
+            return redirect(url_for('logo', url=url))
+    return render_template('index.html')
 
 @app.route("/<path:url>")
 def meta(url):

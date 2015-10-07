@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Someta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="static/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="static/css/someta.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Roboto Mono:regular,500"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+</head>
+<body class="body">
+  <div class="w-section main-section">
+    <div class="w-container main-container">
+      <h1 class="heading1">The Meta Machine</h1>
+      <div class="status">alpha</div>
+      <div class="desc">An API for&nbsp;Websites Metadata and Logos.</div>
+      <div class="w-form form-wrapper">
+        <form action="/" method="POST" class="form" id="email-form" name="email-form" data-name="Email Form">
+          <h3 class="h3">Give it a try!</h3>
+          <input class="w-input try-field" id="url-2" type="text" placeholder="E.g.: github.com" name="url" data-name="url" required="required" autofocus="autofocus">
+          <div class="try-options-wrapper">
+            <div class="w-radio try-option">
+              <input class="w-radio-input" id="all" type="radio" name="all" value="all" data-name="all">
+              <label class="w-form-label" for="all">All metadata</label>
+            </div>
+            <div class="w-radio try-option">
+              <input class="w-radio-input" id="og" type="radio" name="og" value="og" data-name="og">
+              <label class="w-form-label" for="og">Facebook OpenGraph</label>
+            </div>
+            <div class="w-radio try-option">
+              <input class="w-radio-input" id="twitter" type="radio" name="twitter" value="twitter" data-name="twitter">
+              <label class="w-form-label" for="twitter">Twitter</label>
+            </div>
+            <div class="w-radio try-option">
+              <input class="w-radio-input" id="images" type="radio" name="images" value="images" data-name="images">
+              <label class="w-form-label" for="images">Images</label>
+            </div>
+            <div class="w-radio try-option">
+              <input class="w-radio-input" id="logo" type="radio" name="logo" value="logo" data-name="logo">
+              <label class="w-form-label" for="logo">Logo</label>
+            </div>
+          </div>
+          <input class="w-button try-button" type="submit" value="Go" data-wait="Please wait...">
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+      <div class="api-scheme">
+        <h3 class="h3">API</h3>
+        <div class="api-cell">
+          <div class="api-cell-header">
+            <div class="api-cell-heading">All Metadata</div>
+          </div>
+          <div class="api-cell-content">
+            <div class="api-cell-text">https://someta.com/<strong>airbnb.com</strong>
+            </div>
+          </div>
+        </div>
+        <div class="api-cell">
+          <div class="api-cell-header">
+            <div class="api-cell-heading">OpenGraph</div>
+          </div>
+          <div class="api-cell-content">
+            <div class="api-cell-text">https://someta.com/<strong>og/airbnb.com</strong>
+            </div>
+          </div>
+        </div>
+        <div class="api-cell">
+          <div class="api-cell-header">
+            <div class="api-cell-heading">Twitter</div>
+          </div>
+          <div class="api-cell-content">
+            <div class="api-cell-text">https://someta.com/<strong>twitter/airbnb.com</strong>
+            </div>
+          </div>
+        </div>
+        <div class="api-cell">
+          <div class="api-cell-header">
+            <div class="api-cell-heading">Images</div>
+          </div>
+          <div class="api-cell-content">
+            <div class="api-cell-text">https://someta.com/<strong>images/airbnb.com</strong>
+            </div>
+          </div>
+        </div>
+        <div class="api-cell">
+          <div class="api-cell-header">
+            <div class="api-cell-heading">Logo</div>
+          </div>
+          <div class="api-cell-content">
+            <div class="api-cell-text">https://someta.com/<strong>logo/airbnb.com</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-clearfix footer">
+        <div class="footer-text">By <a class="footer-link" target="_blank" href="http://abdelhai.com/">Mustafa Abdelhai</a> | <a class="footer-link" target="_blank" href="https://github.com/abdelhai/SoMeta">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
