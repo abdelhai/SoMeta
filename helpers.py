@@ -55,7 +55,7 @@ def get_og(html_tree):
     meta_list = get_meta(html_tree)
     og_list = []
     og_dict = dict()
-    for i in range(len(meta_list)):
+    for i in enumerate(meta_list):
         if len(meta_list[i]) >= 2 and 'property' in meta_list[i].keys() and 'content' in meta_list[i].keys() and 'og:' in meta_list[i]['property']:
             property = meta_list[i]['property']
             content = meta_list[i]['content']
